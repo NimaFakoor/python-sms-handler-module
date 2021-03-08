@@ -3,12 +3,11 @@
 sms handler python module in IRAN for  0098SMS  
 
 شرکت پنل اس ام اس 
-
 0098sms
 
 ==========
 
-&nbsp;
+## سریع استفاده کنید
 
 این برنامه به شما این توانایی را میدهد که به راحتی برای کار های خود پیامک ارسال کنید.
 
@@ -18,7 +17,6 @@ sms handler python module in IRAN for  0098SMS
   
  ایجاد کنید و نام کاربری و رمز عبور خود را دریافت کنید
  
-
 سپس کافی است در برنامه در قسمت
 
     def __init__(self):
@@ -30,16 +28,16 @@ sms handler python module in IRAN for  0098SMS
         'DOMAIN': '0098'
         }
         
-مقادیر
+   مقادیر نام کاربری و رمز عبور را 
 
         'USERNAME': 'yourusername',
         'PASSWORD': 'yourpassword',
 
-خود را قرار دهید.
+ قرار دهید.
 
-حال یک ابجکت از
+حال در برنامه خود یک ابجکت از
 
-  MsgHandler
+    MsgHandler
   
 بسازید.
 
@@ -49,3 +47,12 @@ sms handler python module in IRAN for  0098SMS
     message_handler.group_send(message_text="سلام دنیا" ,phones=['09981152473','09217708151','09154874358','09034715420'])
     message_handler.user_send_message(message_text="سلام دنیا" ,phone_number='09391971797')
     
+==========
+
+## متود ها
+
+این ماژول شامل هفت متود میباشد که برای به کاربر یا توسعه دهنده اجازه میدهد با استفاده از متود های عمومی پیام کوتاه خود را ارسال کند.
+
+توجه کنید که پارامتر های تمامی توابع عمومی بصورت رشته یا
+string 
+است.
