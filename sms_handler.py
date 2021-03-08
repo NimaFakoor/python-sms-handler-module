@@ -65,4 +65,4 @@ if __name__ == '__main__':
     message_handler.group_send(message_text="سلام دنیا" ,phones=['09981152473','09217708151','09154874358','09034715420'])
     message_handler.user_send_message(message_text="سلام دنیا" ,phone_number='09391971797')
     otp = str(random.randrange(123456,999999))
-    print( message_handler.user_send_otp(otp = otp, phone_number='09981152473'))
+    message_handler.user_send_otp(otp = otp, phone_number='09981152473')
