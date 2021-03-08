@@ -29,7 +29,7 @@ SMS panel 0098sms .co
 سپس کافی است در برنامه در قسمت
 
     def __init__(self):
-        # api methode 
+        # Web service methode 
         self.__params = {
         'FROM': '50002211311',
         'USERNAME': 'yourusername',
