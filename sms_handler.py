@@ -3,7 +3,7 @@ import random
 
 class MsgHandler():
     def __init__(self):
-        # api methode 
+        # Web service methode 
         self.__params = {
         'FROM': '50002211311',
         'USERNAME': 'yourusername',
