@@ -6,8 +6,8 @@ class MsgHandler():
         # api methode 
         self.__params = {
         'FROM': '50002211311',
-        'USERNAME': 'dsms8727',
-        'PASSWORD': '36173628',
+        'USERNAME': 'yourusername',
+        'PASSWORD': 'yourpassword',
         'DOMAIN': '0098'
         }
         # server responses :
@@ -60,11 +60,9 @@ class MsgHandler():
             states[number] = state
         return states
 
-
-# http://www.0098sms.com/sendsmslink.aspx?FROM=50002211311&TO=09981152473&TEXT='سلام'&USERNAME=dsms8727&PASSWORD=36173628&DOMAIN=0098
 if __name__ == '__main__':
     message_handler = MsgHandler()
-    #print(message_handler.group_send(message_text="چیکار میکنی 5" ,phones=['09981152473','09217708151','09154874358','09034715420']))
-    #print( message_handler.user_send_message(message_text="سلام عشقم" ,phone_number='09391971797'))
+    message_handler.group_send(message_text="سلام دنیا" ,phones=['09981152473','09217708151','09154874358','09034715420'])
+    message_handler.user_send_message(message_text="سلام دنیا" ,phone_number='09391971797')
     otp = str(random.randrange(123456,999999))
     print( message_handler.user_send_otp(otp = otp, phone_number='09981152473'))
